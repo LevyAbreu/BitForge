@@ -1,14 +1,195 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BitForge - Blog da Fábrica de Software</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <div class="logo">
+                    <span class="logo-img"><img src="assets/logo.png" alt="Logo"></span>
+                    <div class="logo-text">
+                        <h1>BitForge</h1>
+                        <p>Fábrica de Software</p>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="#projetos" class="nav-link projetos-btn">Projetos</a>
+                <a href="#sobre" class="nav-link sobre-btn">Sobre</a>
+                <a href="#contato" class="nav-link contato-btn">Contato</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Forjando o Futuro do
+                <span class="hero-highlight">Software</span>
+            </h1>
+            <p class="hero-description">
+                Na BitForge, transformamos ideias em soluções digitais inovadoras. Desenvolvemos 
+                software de alta qualidade com tecnologias de ponta e design excepcional.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary">
+                    Ver Projetos
+                </button>
+                <button class="btn btn-secondary">
+                    Fale Conosco
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section class="why-choose">
+        <div class="container">
+            <h2 class="section-title">Por que escolher a BitForge?</h2>
+            <p class="section-subtitle">
+                Combinamos experiência técnica com criatividade para entregar soluções 
+                que superam expectativas
+            </p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="https://img.icons8.com/?size=30&id=64794&format=png&color=FF8C00" alt="Dev-Icon">
+                    </div>
+                    <h3>Desenvolvimento Ágil</h3>
+                    <p>Metodologias modernas para entregas rápidas e eficientes</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="https://img.icons8.com/?size=30&id=16412&format=png&color=FF8C00" alt="Tech-Icon">
+                    </div>
+                    <h3>Tecnologias Avançadas</h3>
+                    <p>Stack tecnológico de ponta para soluções inovadoras</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="https://img.icons8.com/?size=30&id=FTRyh6cCM1Sm&format=png&color=FF8C00" alt="Team-Icon">
+                    </div>
+                    <h3>Equipe Especializada</h3>
+                    <p>Profissionais experientes e dedicados ao seu projeto</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="https://img.icons8.com/?size=30&id=3ijPBE1Xop4I&format=png&color=FF8C00" alt="">
+                    </div>
+                    <h3>Soluções Personalizadas</h3>
+                    <p>Cada projeto é único e merece uma abordagem exclusiva</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projetos" class="projects">
+        <div class="container">
+            <h2 class="section-title">Nossos Projetos</h2>
+            <p class="section-subtitle">
+                Conheça algumas das soluções inovadoras que desenvolvemos para nossos clientes
+            </p>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/HH_printscreen.png" alt="">
+                    </div>
+                    <div class="project-info">
+                        <h3>HealthHub</h3>
+                        <p>
+                            Com funções como: cálculo e classificação do Índice de Massa Corporal. O HealthHub permite que o usuário insira seus dados de saúde e o sistema, através de calculos comumente utilizados.
+                        </p>
+                        <div class="project-buttons">
+                            <button class="btn btn-primary btn-small">
+                                <img src="https://img.icons8.com/?size=20&id=Ka8CstC3M6mR&format=png&color=FFFFFF" alt="">
+                                Acessar Site
+                            </button>
+                            <button class="btn btn-outline btn-small">
+                                <img src="https://img.icons8.com/?size=20&id=82775&format=png&color=000000" alt="">
+                                Manual
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/PP_printscreen.png" alt="">
+                    </div>
+                    <div class="project-info">
+                        <h3>PayPlanner</h3>
+                        <p>
+                            O PayPlanner foi projetado para permitir que usuários e administradores gerenciem de forma eficiente todas as etapas do ciclo de vida de uma fatura.
+                        </p>
+                        <div class="project-buttons">
+                            <a href="https://health-hub-ruddy.vercel.app/">
+                                <button class="btn btn-primary btn-small">
+                                    <img src="https://img.icons8.com/?size=20&id=Ka8CstC3M6mR&format=png&color=FFFFFF" alt="">
+                                    Acessar Site
+                                </button>    
+                            </a>
+                            <button class="btn btn-outline btn-small">
+                                <img src="https://img.icons8.com/?size=20&id=82775&format=png&color=000000" alt="">
+                                Manual
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-img"><img src="assets/logo.png" alt="Logo"></span>
+                        <h3>BitForge</h3>
+                    </div>
+                    <p>Transformando ideias em realidade digital através de soluções inovadoras e tecnologia de ponta.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <p>contato@bitforge.dev</p>
+                    <p>+55 (11) 99999-9999</p>
+                    <p>São Paulo, SP - Brasil</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 BitForge. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
