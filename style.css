@@ -5,11 +5,13 @@
     box-sizing: border-box;
 }
 
+/* Ajuste global para o body: sempre compensar a altura do header */
 body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f8fafc;
+    padding-top: 90px; /* altura padrão do header */
 }
 
 .container {
@@ -119,14 +121,15 @@ body {
 
 /* Hero Section */
 .hero {
-    padding: 140px 2rem 100px;
+    padding: 60px 2rem 100px;
     text-align: center;
     color: white;
-    min-height: 80vh;
+    min-height: calc(100vh - 90px);
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 
 .hero-content {
     max-width: 800px;
@@ -530,6 +533,9 @@ body {
 }
 
 @media (max-width: 480px) {
+    .hero {
+        margin-top: 3rem;
+    }
     .hero-title {
         font-size: 2rem;
     }
